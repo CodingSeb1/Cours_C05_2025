@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="fr" xml:lang="fr" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Liaisons équivalentes [C05 : Modéliser des actions mécaniques]</title>
+		<meta charset="UTF-8" ></meta>
+		<meta name="generator" content="SCENARI 6.3.11 / OpaleExtEmeraude 24.1.0" ></meta>
+		<meta name="revision" content="2025-02-13 01:30" ></meta>
+		<link rel="start" href="module_Cours_C05.html" title="C05 : Modéliser des actions mécaniques" ></link>
+		<meta name="author" content="S. Lemasle
+" ></meta>
+		<meta name="keywords" content="" ></meta>
+		<meta name="date" content="2025" ></meta>
+		<meta name="viewport" content="width=device-width, initial-scale=1" ></meta>
+		<link rel="stylesheet" type="text/css" href="../lib-md/w_scCodeMgr/scCodeMgr.css" ></link>
+		<link rel="stylesheet" type="text/css" href="../lib-md/w_tePlayer/tePlayer.css" ></link>
+		<script>/*<![CDATA[*/
+/*0*/ var scServices = {id:"m72nxarx"};
+/*1*/ window.scLoadParams = {destUri:"/co/module_Cours_C05_24.html", pathToRoot:"../"};
+/*]]>*/</script>
+		<script src="../lib-sc/scCoLib.js" ></script>
+		<script src="../lib-sc/scSiLib.js" ></script>
+		<script src="../lib-sc/scTiLib.js" ></script>
+		<script src="../lib-sc/scPaLib.js" ></script>
+		<script src="../lib-md/s_assmnt.js" ></script>
+		<script src="../lib-sc/scMapMgr.js" ></script>
+		<script src="../lib-sc/scDynUiMgr.js" ></script>
+		<script src="../lib-sc/scTooltipMgr.js" ></script>
+		<script src="../lib-sc/scDragMgr.js" ></script>
+		<script src="../lib-sc/scAssmntMgr.js" ></script>
+		<script src="../lib-md/w_teMgr/teLoader.js" ></script>
+		<script src="../lib-md/w_tplMgr/tplMgr.js" ></script>
+		<script src="../lib-md/s_scSearch/jsSearch.js" ></script>
+		<script src="../lib-md/w_mathjax/mathjaxMgr.js" ></script>
+		<script src="../lib-md/w_tePlayer/tePlayer.js" ></script>
+		<script src="../lib-md/w_scCodeMgr/scCodeMgr.js" ></script>
+		<script src="../lib-md/w_searchMgr/searchMgr.js" ></script>
+		<script src="../lib-md/w_scImageMgr/scImageMgr.js" ></script>
+		<script src="../lib-md/w_outMgr/outMgr.js" ></script>
+		<script>/*<![CDATA[*/
+/*0*/ try{if(window.opener && window.opener.scServices && window.opener.scServices.id == scServices.id) scServices = window.opener.scServices; else if(window.parent && window.parent.scServices && window.parent.scServices.id == scServices.id) scServices = window.parent.scServices;}catch(e){}
+scCodeMgr.registerCode("des:div.code");
+
+scImageMgr.registerAdaptedImage("ide:content/des:figure.resInFlow/des:img");
+
+scImageMgr.registerGallery("des:div.galFra");
+
+scImageMgr.registerSequence("des:div.seqFra");
+
+scImageMgr.registerSvg("des:svg");
+scImageMgr.registerZoom("des:a.svgZoom",{type:"svg",svgMax:1,toolbar:1,titlePath:"par:/nsi:/des:span.capTi"});
+
+scImageMgr.registerZoom("des:a.imgZoom",{toolbar:1,mag:1,titlePath:"par:/nsi:/des:span.capTi"});
+
+tePlayerMgr.init();
+/*]]>*/</script>
+		<link rel="shortcut icon" type="image/png" href="../skin/img/favicon.png" ></link>
+		<meta name="robots" content="index,follow" ></meta>
+		<style ></style>
+		<link type="text/css" rel="stylesheet" href="../skin/css/main.css" media="all" ></link>
+		<link type="text/css" rel="stylesheet" href="../skin/css/skin.css" media="all" ></link>
+		<link type="text/css" rel="stylesheet" href="../skin/css/print.css" media="print" ></link>
+		<script>/*<![CDATA[*/
+outMgr.declareOutline("outline.txt");
+	/*]]>*/</script>
+</head>
+	<body class="default module expUc">
+		<div id="root"><header id="header"><h1><span>C05 : Modéliser des actions mécaniques</span></h1><nav role="navigation"><ul id="accessibility"><li class="waiContent"><a href="#content"><span>contenu</span></a></li><li class="waiMenu"><a href="#menu"><span>menu</span></a></li><li class="waiNav"><a href="#navigation"><span>navigation</span></a></li><li class="waiTools"><a href="#tools"><span>outils</span></a></li></ul></nav></header><main id="main" role="main"><div id="document"><div id="content" tabindex="-1"><div class="scroller"><hr class="hidden" ></hr><section class="hBk article expUc"><h2 class="hBk_ti"><span>Liaisons équivalentes</span></h2><div class="hBk_co "><div class="iBk info"><div class="iBk_co "><div class="rBk res"><figure role="group" class="resInFlow image" aria-label=""><div class="resInFlow_co "><img src="../res/BLANC_1cm.PNG" width="46" height="35" alt="" ></img></div></figure></div></div></div><div class="iBk info"><div class="iBk_co "><div class="rBk "><p>Comme celà a déjà été fait en modélisation cinématique, il est possible de déterminer la liaison équivalente à une association de liaisons en série ou en parallèle.</p><p>La méthode jusqu'alors utilisée faisait appel aux torseur cinématiques des liaisons. Il s'agissait de la méthode cinématique.</p><p>La méthode présentée ci-dessous fait appel aux torseurs des actions mécaniques transmissibles par les liaisons. On parle alors de <strong class="txt_emp_is ">méthode statique</strong>.</p></div></div></div><div class="iBk info"><div class="iBk_co "><div class="rBk res"><figure role="group" class="resInFlow image" aria-label=""><div class="resInFlow_co "><img src="../res/BLANC_1cm.PNG" width="46" height="35" alt="" ></img></div></figure></div><div class="rBk res"><figure role="group" class="resInFlow image" aria-label=""><div class="resInFlow_co "><img src="../res/BLANC_1cm.PNG" width="46" height="35" alt="" ></img></div></figure></div></div></div><section class="hBk expUcDiv"><h3 class="hBk_ti"><span>Association de liaisons en série</span></h3><div class="hBk_co "><div class="basic pBk"><h4 class="pBk_ti"><span><i class="type"><span class="label">Fondamental</span></i><span class="hidden"> : </span><span class="title">Liaisons en série</span></span></h4><div class="pBk_co"><div class="rBk res"><figure role="group" class="resInFlow image" aria-label=""><div class="resInFlow_co "><img src="../res/Lserie_Leq.PNG" width="450" height="65" alt="" ></img></div></figure></div><div class="rBk "><p>La liaison équivalente entre 2 et 0 doit être capable de transmettre toutes les composantes d'efforts qui sont transmises par <span class="txt_mathtex_tl "><span>\(L_{10}\)</span></span> et <span class="txt_mathtex_tl "><span>\(L_{21}\)</span></span>:</p></div><div class="rBk res"><figure role="group" class="resInFlow latex"><div class="resInFlow_co "><span>\[\boxed{
+\{ \mathcal T_{eq,2 \rightarrow 0} \}=\{ \mathcal T_{2 \rightarrow 1} \}=\{ \mathcal T_{1 \rightarrow 0} \}
+}\]</span></div></figure></div><div class="rBk "><p>Rappel (méthode cinématique) : la liaison équivalente entre 0 et 2 se détermine par composition des torseurs cinématiques :</p></div><div class="rBk res"><figure role="group" class="resInFlow latex"><div class="resInFlow_co "><span>\[\{ \mathcal V_{eq,2 /0} \}\,=\,\{ \mathcal V_{2/1} \}\,+\,\{ \mathcal V_{1/0} \}\]</span></div></figure></div></div></div><div class="example pBk"><h4 class="pBk_ti"><span><i class="type"><span class="label">Exemple</span></i><span class="hidden"> : </span><span class="title">Pompe à pistons axiaux</span></span></h4><div class="pBk_co"><div class="rBk res"><figure role="group" class="resInFlow image" aria-label=""><div class="resInFlow_co "><a href="../res/Lserie_exemple.PNG" class="imgZoom" target="_blank" onclick="scImageMgr.loading(); return false;" title="Cliquez pour agrandir (nouvelle fenêtre)"><img src="../res/Lserie_exemple_1.PNG" width="630" height="115" alt="" ></img></a></div></figure></div><div class="rBk "><p>On cherche le torseur : <span class="txt_mathtex_tl "><span>\(\{ \mathcal T_{eq,2 \rightarrow 0} \}={\vphantom{\left \{ \begin{matrix}X_{21} &amp; L_{21} \\Y_{21} &amp; M_{21} \\Z_{21} &amp; N_{21} \\\end{matrix} \right \} }}_{A}\left \{ \begin{matrix}X_{20} &amp; L_{20} \\Y_{20} &amp; M_{20} \\Z_{20} &amp; N_{20} \\\end{matrix} \right \}_{\left( \vec x_1, \vec y_1, \vec z_1 \right)}\)</span></span></p></div><div class="rBk "><p>On doit avoir :</p></div><div class="rBk res"><figure role="group" class="resInFlow latex"><div class="resInFlow_co "><span>\[\{ \mathcal T_{eq,2 \rightarrow 0} \}=\{ \mathcal T_{2 \rightarrow 1} \}=\{ \mathcal T_{1 \rightarrow 0} \} \\
+\]</span></div></figure></div><div class="rBk res"><figure role="group" class="resInFlow latex"><div class="resInFlow_co "><span>\[\Leftrightarrow{\vphantom{
+\left \{ \begin{matrix}
+X_{21} &amp; L_{21} \\ 
+Y_{21} &amp; M_{21} \\ 
+Z_{21} &amp; N_{21} \\ 
+\end{matrix} \right \} }}
+_{A} 
+\left \{ \begin{matrix}
+X_{20} &amp; L_{20} \\ 
+Y_{20} &amp; M_{20} \\ 
+Z_{20} &amp; N_{20} \\ 
+\end{matrix} \right \}_{\left( \vec x_1, \vec y_1, \vec z_1 \right)}
+=
+{\vphantom{\left \{ \begin{matrix}
+X_{21} &amp; L_{21} \\ 
+Y_{21} &amp; M_{21} \\ 
+Z_{21} &amp; N_{21} \\ 
+\end{matrix} \right \} }}
+_{A} 
+\left \{ \begin{matrix}
+X_{21} &amp; 0\\ 
+Y_{21} &amp; 0 \\ 
+Z_{21} &amp; 0 \\ 
+\end{matrix} \right \}_{\left( \vec x_1, \vec y_1, \vec z_1 \right)}
+=
+{\vphantom{
+\left \{ \begin{matrix}
+X_{21} &amp; L_{21} \\ 
+Y_{21} &amp; M_{21} \\ 
+Z_{21} &amp; N_{21} \\ 
+\end{matrix} \right \} }}
+_{A} 
+\left \{ \begin{matrix}
+X_{10} &amp;0 \\ 
+0 &amp; M_{10} \\ 
+0 &amp; N_{10} \\ 
+\end{matrix} \right \}_{\left( \vec x_1, \vec y_1, \vec z_1 \right)}\]</span></div></figure></div><div class="rBk "><div class="txtRes "><div class="txt "><p><span class="txt_mathtex_tl "><span>\(\Leftrightarrow \, \{ \mathcal T_{eq,2 \rightarrow 0} \}={\vphantom{\left \{ \begin{matrix}X_{21} &amp; L_{21} \\Y_{21} &amp; M_{21} \\Z_{21} &amp; N_{21} \\\end{matrix} \right \} }}_{A}\left \{ \begin{matrix}X_{10} &amp;0 \\0 &amp; 0 \\0 &amp; 0 \\\end{matrix} \right \}_{\left( \vec x_1, \vec y_1, \vec z_1 \right)}\)</span></span>, avec <span class="txt_mathtex_tl "><span>\(X_{20}=X_{21}=X_{10}\)</span></span></p><p>Liaison sphère plan de centre A et de normale <span class="txt_mathtex_tl "><span>\(\vec x_1\)</span></span></p></div><div class="img rgt "><figure role="group" class="resInFlow image" aria-label=""><div class="resInFlow_co "><img src="../res/Lserie_conclusion.PNG" width="220" height="75" alt="" ></img></div></figure></div></div></div></div></div></div></section><section class="hBk expUcDiv"><h3 class="hBk_ti"><span>Association de liaisons en parallèle</span></h3><div class="hBk_co "><div class="basic pBk"><h4 class="pBk_ti"><span><i class="type"><span class="label">Fondamental</span></i><span class="hidden"> : </span><span class="title">Liaisons en parallèle</span></span></h4><div class="pBk_co"><div class="rBk res"><figure role="group" class="resInFlow image" aria-label=""><div class="resInFlow_co "><img src="../res/Lparallele.PNG" width="450" height="113" alt="" ></img></div></figure></div><div class="rBk "><p>La liaison équivalente doit pouvoir transmettre tous les efforts que transmettent chacune des liaisons simples :</p></div><div class="rBk res"><figure role="group" class="resInFlow latex"><div class="resInFlow_co "><span>\[\boxed{
+\{ \mathcal T_{eq,0 \rightarrow 1} \}=\{ \mathcal T_{0\rightarrow 1}^a \}+\{ \mathcal T_{0 \rightarrow 1}^b \}
+}\]</span></div></figure></div><div class="rBk "><p>Rappel (méthode cinématique) : la liaison équivalente entre 1 et 0 se détermine en égalisant les torseurs cinématiques :</p></div><div class="rBk res"><figure role="group" class="resInFlow latex"><div class="resInFlow_co "><span>\[\{ \mathcal V_{eq,1 /0} \}\,=\,\{ \mathcal V_{1/0}^a \}\,=\,\{ \mathcal V_{1/0}^b\}\]</span></div></figure></div></div></div><div class="example pBk"><h4 class="pBk_ti"><span><i class="type"><span class="label">Exemple</span></i><span class="hidden"> : </span><span class="title">Micromoteur de modélisme</span></span></h4><div class="pBk_co"><div class="rBk res"><figure role="group" class="resInFlow image" aria-label=""><div class="resInFlow_co "><img src="../res/Lparallele_exemple.PNG" width="630" height="121" alt="" ></img></div></figure></div><div class="rBk "><p>Pour déterminer la liaison équivalente, on se sert de la relation :</p></div><div class="rBk res"><figure role="group" class="resInFlow latex"><div class="resInFlow_co "><span>\[\{ \mathcal T_{eq,0 \rightarrow 1} \}=\{ \mathcal T_{0\rightarrow 1}^a \}+\{ \mathcal T_{0 \rightarrow 1}^b \}\]</span></div></figure></div><div class="rBk res"><figure role="group" class="resInFlow latex"><div class="resInFlow_co "><span>\[\Leftrightarrow \{ \mathcal T_{eq,0 \rightarrow 1} \}
+=
+{\vphantom{
+\left \{ \begin{matrix}
+X_{21} &amp; L_{21} \\ 
+Y_{21} &amp; M_{21} \\ 
+Z_{21} &amp; N_{21} \\ 
+\end{matrix} \right \} }}
+_{O} 
+\left \{ \begin{matrix}
+X_{01}^a &amp; L_{01}^a \\ 
+Y_{01}^a &amp; M_{01}^a \\ 
+0&amp;0 \\
+\end{matrix} \right \}_{\left( \vec x_0, \vec y_0, \vec z_0 \right)}
++
+{\vphantom{
+\left \{ \begin{matrix}
+ X_{21} &amp; L_{21} \\ 
+Y_{21} &amp; M_{21} \\ 
+Z_{21} &amp; N_{21} \\ 
+\end{matrix} \right \} }}
+_{O} 
+\left \{ \begin{matrix}
+0 &amp; L_{01}^b \\ 
+0 &amp; M_{01}^b \\ 
+Z_{01}^b &amp; 0 \\ 
+\end{matrix} \right \}_{\left( \vec x_0, \vec y_0, \vec z_0 \right)}\]</span></div></figure></div><div class="rBk res"><figure role="group" class="resInFlow latex"><div class="resInFlow_co "><span>\[\Leftrightarrow \, \{ \mathcal T_{eq,0 \rightarrow 1} \}
+=
+{\vphantom{
+\left \{ \begin{matrix}
+X_{21} &amp; L_{21} \\ 
+Y_{21} &amp; M_{21} \\ 
+Z_{21} &amp; N_{21} \\ 
+\end{matrix} \right \} }}
+_{O} 
+\left \{ \begin{matrix}
+X_{01}^a &amp; L_{01}^a +L_{01}^b\\ 
+Y_{01}^a &amp; M_{01}^a +M_{01}^b\\ 
+Z_{01}^b&amp;0 \\ 
+\end{matrix} \right \}_{\left( \vec x_0, \vec y_0, \vec z_0 \right)}
+\quad
+\text{ : Liaison pivot d'axe   } (O,\vec z_0)\]</span></div></figure></div><div class="rBk res"><figure role="group" class="resInFlow image" aria-label=""><div class="resInFlow_co "><img src="../res/Lparallele_conclusion.PNG" width="360" height="103" alt="" ></img></div></figure></div></div></div></div></section></div></section></div></div><div id="navigation" tabindex="-1"><hr class="hidden" ></hr><nav class="pageTurner" role="navigation"><ul><li class="pagePrev"><a rel="prev" target="_self" href="module_Cours_C05_23.html" class="btnNav prev" title="Précédent (Dualité torseurs d&apos;actions mécaniques/cinématiques)"><span>Précédent</span></a></li><li class="pageNext"><a rel="next" target="_self" href="module_Cours_C05_6.html" class="btnNav next" title="Suivant (Actions mécaniques réparties : du modèle local au modèle global)"><span>Suivant</span></a></li></ul></nav></div></div><div id="toolbox"><nav aria-label="menu principal" class="pageSelector" id="menu" role="navigation" tabindex="-1"><hr class="hidden" ></hr><ul class="mnu static" data-totalPages="32"><li class="sel_no anc_no type_l  dpt_0 obj"><div class="lbl type_l" id="module_Cours_C05_1.html"><a href="module_Cours_C05_1.html" target="_self" class="item"><span>Objectifs</span></a></div></li><li class="sel_no anc_no type_b  type_b_c dpt_0 ueDiv"><div class="lbl type_b" id="module_Cours_C05_2.html"><a href="module_Cours_C05_2.html" target="_self" class="item"><span>Définitions</span></a></div></li><li class="sel_no anc_no type_b  type_b_c dpt_0 ueDiv"><div class="lbl type_b" id="module_Cours_C05_3.html"><a href="module_Cours_C05_3.html" target="_self" class="item"><span>Modélisation d'une action mécanique</span></a></div></li><li class="sel_no anc_no type_b  type_b_c dpt_0 ueDiv"><div class="lbl type_b" id="module_Cours_C05_4.html"><a href="module_Cours_C05_4.html" target="_self" class="item"><span>Modèles des actions mécaniques usuelles</span></a></div></li><li class="sel_no anc_yes type_b  dpt_0 ueDiv"><div class="lbl type_b" id="module_Cours_C05_5.html"><a href="module_Cours_C05_5.html" target="_self" class="item" type="up"><span>Actions mécaniques transmissibles par les liaisons normalisées</span></a></div><ul class="sub mnu_open"><li class="sel_no anc_no type_l  dpt_1 expUc"><div class="lbl type_l" id="module_Cours_C05_22.html"><a href="module_Cours_C05_22.html" target="_self" class="item"><span>Cas général</span></a></div></li><li class="sel_no anc_no type_l  dpt_1 expUc"><div class="lbl type_l" id="module_Cours_C05_23.html"><a href="module_Cours_C05_23.html" target="_self" class="item"><span>Dualité torseurs d'actions mécaniques/cinématiques</span></a></div></li><li class="sel_yes anc_no type_l  dpt_1 expUc"><div class="lbl type_l" id="module_Cours_C05_24.html"><span class="item"><span>Liaisons équivalentes</span></span></div></li></ul></li><li class="sel_no anc_no type_b  type_b_c dpt_0 ueDiv"><div class="lbl type_b" id="module_Cours_C05_6.html"><a href="module_Cours_C05_6.html" target="_self" class="item"><span>Actions mécaniques réparties : du modèle local au modèle global</span></a></div></li><li class="sel_no anc_no type_b  type_b_c dpt_0 ueDiv"><div class="lbl type_b" id="module_Cours_C05_7.html"><a href="module_Cours_C05_7.html" target="_self" class="item"><span>Modélisation des phénomènes de frottement</span></a></div></li><li class="sel_no anc_no type_b  type_b_c dpt_0 ueDiv"><div class="lbl type_b" id="module_Cours_C05_8.html"><a href="module_Cours_C05_8.html" target="_self" class="item"><span>Résistance au roulement et au pivotement</span></a></div></li></ul></nav><div id="tools" tabindex="-1"><hr class="hidden" ></hr><nav class="headingSelector" role="navigation"><ul class="mnu tools"><li class="anc_no home" data-position="uncle"><div class="lbl"><a href="module_Cours_C05.html" target="_self" class="item" type="index" title="Page d&apos;accueil du module"><span>Accueil</span></a></div></li><li class="anc_yes module" data-position="ancestor"><div class="lbl"><span class="item"><span>Module</span></span></div></li></ul></nav></div></div></main><footer id="footer" tabindex="-1"><hr class="hidden" ></hr><a id="linkSp" target="_blank" href="https://doc.scenari.software/Opale" title="Réalisé avec SCENARI (nouvelle fenêtre)"><span><img alt="Réalisé avec Scenari (nouvelle fenêtre)" src="../skin/img/tpl/scBtn.png" ></img></span></a></footer></div>
+		<script src="../skin/js/skin.js" ></script>
+		<script>/*<![CDATA[*/
+/* 5 */ outMgr.init();
+/* 5 */ scCodeMgr.init();
+/* 5 */ scImageMgr.init();
+/* 0 */ tplMgr.init({accessBar:"none",themeMode:"none",addMenuBtn:false});
+/*]]>*/</script>
+		<script>/*<![CDATA[*/mathjaxMgr.init();/*]]>*/</script></body></html>

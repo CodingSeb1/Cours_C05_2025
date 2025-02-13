@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="fr" xml:lang="fr" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Torseur d'une action mécanique transmissible [C05 : Modéliser des actions mécaniques]</title>
+		<meta charset="UTF-8" ></meta>
+		<meta name="generator" content="SCENARI 6.3.11 / OpaleExtEmeraude 24.1.0" ></meta>
+		<meta name="revision" content="2025-02-13 01:30" ></meta>
+		<link rel="start" href="module_Cours_C05.html" title="C05 : Modéliser des actions mécaniques" ></link>
+		<meta name="author" content="S. Lemasle
+" ></meta>
+		<meta name="keywords" content="" ></meta>
+		<meta name="date" content="2025" ></meta>
+		<meta name="viewport" content="width=device-width, initial-scale=1" ></meta>
+		<link rel="stylesheet" type="text/css" href="../lib-md/w_scCodeMgr/scCodeMgr.css" ></link>
+		<link rel="stylesheet" type="text/css" href="../lib-md/w_tePlayer/tePlayer.css" ></link>
+		<script>/*<![CDATA[*/
+/*0*/ var scServices = {id:"m72nxarx"};
+/*1*/ window.scLoadParams = {destUri:"/co/module_Cours_C05_14.html", pathToRoot:"../"};
+/*]]>*/</script>
+		<script src="../lib-sc/scCoLib.js" ></script>
+		<script src="../lib-sc/scSiLib.js" ></script>
+		<script src="../lib-sc/scTiLib.js" ></script>
+		<script src="../lib-sc/scPaLib.js" ></script>
+		<script src="../lib-md/s_assmnt.js" ></script>
+		<script src="../lib-sc/scMapMgr.js" ></script>
+		<script src="../lib-sc/scDynUiMgr.js" ></script>
+		<script src="../lib-sc/scTooltipMgr.js" ></script>
+		<script src="../lib-sc/scDragMgr.js" ></script>
+		<script src="../lib-sc/scAssmntMgr.js" ></script>
+		<script src="../lib-md/w_teMgr/teLoader.js" ></script>
+		<script src="../lib-md/w_tplMgr/tplMgr.js" ></script>
+		<script src="../lib-md/s_scSearch/jsSearch.js" ></script>
+		<script src="../lib-md/w_mathjax/mathjaxMgr.js" ></script>
+		<script src="../lib-md/w_tePlayer/tePlayer.js" ></script>
+		<script src="../lib-md/w_scCodeMgr/scCodeMgr.js" ></script>
+		<script src="../lib-md/w_searchMgr/searchMgr.js" ></script>
+		<script src="../lib-md/w_scImageMgr/scImageMgr.js" ></script>
+		<script src="../lib-md/w_outMgr/outMgr.js" ></script>
+		<script>/*<![CDATA[*/
+/*0*/ try{if(window.opener && window.opener.scServices && window.opener.scServices.id == scServices.id) scServices = window.opener.scServices; else if(window.parent && window.parent.scServices && window.parent.scServices.id == scServices.id) scServices = window.parent.scServices;}catch(e){}
+scCodeMgr.registerCode("des:div.code");
+
+scImageMgr.registerAdaptedImage("ide:content/des:figure.resInFlow/des:img");
+
+scImageMgr.registerGallery("des:div.galFra");
+
+scImageMgr.registerSequence("des:div.seqFra");
+
+scImageMgr.registerSvg("des:svg");
+scImageMgr.registerZoom("des:a.svgZoom",{type:"svg",svgMax:1,toolbar:1,titlePath:"par:/nsi:/des:span.capTi"});
+
+scImageMgr.registerZoom("des:a.imgZoom",{toolbar:1,mag:1,titlePath:"par:/nsi:/des:span.capTi"});
+
+tePlayerMgr.init();
+/*]]>*/</script>
+		<link rel="shortcut icon" type="image/png" href="../skin/img/favicon.png" ></link>
+		<meta name="robots" content="index,follow" ></meta>
+		<style ></style>
+		<link type="text/css" rel="stylesheet" href="../skin/css/main.css" media="all" ></link>
+		<link type="text/css" rel="stylesheet" href="../skin/css/skin.css" media="all" ></link>
+		<link type="text/css" rel="stylesheet" href="../skin/css/print.css" media="print" ></link>
+		<script>/*<![CDATA[*/
+outMgr.declareOutline("outline.txt");
+	/*]]>*/</script>
+</head>
+	<body class="default module expUc">
+		<div id="root"><header id="header"><h1><span>C05 : Modéliser des actions mécaniques</span></h1><nav role="navigation"><ul id="accessibility"><li class="waiContent"><a href="#content"><span>contenu</span></a></li><li class="waiMenu"><a href="#menu"><span>menu</span></a></li><li class="waiNav"><a href="#navigation"><span>navigation</span></a></li><li class="waiTools"><a href="#tools"><span>outils</span></a></li></ul></nav></header><main id="main" role="main"><div id="document"><div id="content" tabindex="-1"><div class="scroller"><hr class="hidden" ></hr><section class="hBk article expUc"><h2 class="hBk_ti"><span>Torseur d'une action mécanique transmissible</span></h2><div class="hBk_co "><div class="iBk info"><div class="iBk_co "><div class="rBk "><p>Nous venons de mettre en évidence le fait que deux vecteurs sont nécessaires pour modéliser convenablement une action mécanique s'exerçant sur un système matériel. En effet, selon le point où l'on se place pour ressentir les effets d'une action mécanique, un vecteur force et/ou un vecteur moment sont nécessaires.</p></div></div></div><section class="hBk expUcDiv"><h3 class="hBk_ti"><span>Définition</span></h3><div class="hBk_co "><div class="def pBk"><h4 class="pBk_ti"><span><i class="type"><span class="label">Définition</span></i><span class="hidden"> : </span><span class="title">Torseur d'une action mécanique transmissible</span></span></h4><div class="pBk_co"><div class="rBk "><p>Le vecteur force et le vecteur moment en un point sont regroupés dans un torseur appelé <strong class="txt_emp_is ">torseur de l'action mécanique transmissible</strong> :</p></div><div class="rBk res"><figure role="group" class="resInFlow latex"><div class="resInFlow_co "><span>\[\boxed{\quad 
+\{ \mathcal T_{2 \rightarrow 1} \}
+=
+{\vphantom{\left\{\begin{array}{ccc}
+\overrightarrow{R_{2\rightarrow 1}} \\ 
+\overrightarrow{M_{A} (2\rightarrow 1)}
+\end{array}\right\}}}
+_{A} 
+\left \{ \begin{array}{c} 
+\overrightarrow{R}_{2\rightarrow 1} \\ 
+\overrightarrow{M}_{A, \,2\rightarrow 1}
+\end{array} \right \} 
+\quad}\]</span></div></figure></div><div class="rBk "><p>Ce torseur représente l'action mécanique de 2 (solide, liquide, gaz) sur un solide 1 :</p><ul class="txt_il "><li class="txt_ili "><p><span class="txt_mathtex_tl "><span>\(\overrightarrow{R_{2\rightarrow 1}}\)</span></span> : Résultante du torseur, vecteur indépendant du point où le torseur est exprimé (invariant vectoriel).</p></li><li class="txt_ili "><p><span class="txt_mathtex_tl "><span>\(\overrightarrow{M_{A} (2\rightarrow 1)}\)</span></span> : Moment du torseur, ce vecteur <strong class="txt_emp_is ">dépend</strong> du point d'expression du torseur.</p></li></ul></div></div></div><div class="iBk info"><div class="iBk_co "><div class="rBk "><p>Comme en cinématique, on peut utiliser les notations en ligne ou en colonne des torseurs faisant intervenir les composantes de chaque vecteur :</p></div><div class="rBk res"><figure role="group" class="resInFlow latex"><div class="resInFlow_co "><span>\[\{ \mathcal T_{2 \rightarrow 1} \}
+=
+{\vphantom{\left\{\begin{array}{ccc}
+\overrightarrow{R_{2\rightarrow 1}} \\ 
+\overrightarrow{M_{A} (2\rightarrow 1)}
+\end{array}\right\}}}
+_{A} 
+\left \{ \begin{array}{c} 
+X_{21}\vec x +Y_{21}\vec y+Z_{21}\vec z \\ 
+L_{21}\vec x +M_{21}\vec y+N_{21}\vec z \\ 
+\end{array} \right \} 
+=
+{\vphantom{
+\left \{ \begin{matrix}
+X_{21} &amp; L_{21} \\ 
+Y_{21} &amp; M_{21} \\ 
+Z_{21} &amp; N_{21} \\ 
+\end{matrix} \right \} }}
+_{A} 
+\left \{ \begin{matrix}
+X_{21} &amp; L_{21} \\ 
+Y_{21} &amp; M_{21} \\ 
+Z_{21} &amp; N_{21} \\ 
+\end{matrix} \right \}_{\left( \vec x, \vec y, \vec z \right)}
+\]</span></div></figure></div></div></div></div></section><section class="hBk expUcDiv"><h3 class="hBk_ti"><span>Propriétés</span></h3><div class="hBk_co "><section class="hBk expUcDiv"><h4 class="hBk_ti"><span>Changement de point d'un torseur d'action mécanique</span></h4><div class="hBk_co "><div class="iBk info"><div class="iBk_co "><div class="rBk "><p>Connaissant le modèle de l'action mécanique de 2 sur 1 en un point A :</p></div><div class="rBk res"><figure role="group" class="resInFlow latex"><div class="resInFlow_co "><span>\[\{ \mathcal T_{2 \rightarrow 1} \}={\vphantom{\left\{\begin{array}{ccc}\overrightarrow{R_{2\rightarrow 1}} \\\overrightarrow{M_{A} (2\rightarrow 1)}\end{array}\right\}}}_{A}\left \{ \begin{array}{c}\overrightarrow{R}_{2\rightarrow 1} \\\overrightarrow{M}_{A, \,2\rightarrow 1}\end{array} \right \}\]</span></div></figure></div><div class="rBk "><p>il est possible de donner le modèle de cette action en un point B en utilisant la formule de changement de point du torseur :</p></div><div class="rBk res"><figure role="group" class="resInFlow latex"><div class="resInFlow_co "><span>\[\boxed{\quad
+\{ \mathcal T_{2 \rightarrow 1} \}=
+{\vphantom{\left\{\begin{array}{ccc}\overrightarrow{R}_{2\rightarrow 1} \\\overrightarrow{M_{A} (2\rightarrow 1)}\end{array}\right\}}}_{B}
+\left \{ \begin{array}{c}\overrightarrow{R}_{2\rightarrow 1} \\\overrightarrow{M}_{B, \,2\rightarrow 1}\end{array} \right \} 
+\quad \text{ avec : } \overrightarrow{M}_{B, \,2\rightarrow 1}=\overrightarrow{M}_{A, \,2\rightarrow 1}+\overrightarrow{BA} \wedge \overrightarrow{R}_{2\rightarrow 1}
+\quad}\]</span></div></figure></div></div></div></div></section><section class="hBk expUcDiv"><h4 class="hBk_ti"><span>Somme de deux torseurs</span></h4><div class="hBk_co "><div class="iBk info"><div class="iBk_co "><div class="rBk "><p>Le torseur représentant l'action de deux solides 2 et 3 sur un solide 1 peut s'écrire :</p></div><div class="rBk res"><figure role="group" class="resInFlow latex"><div class="resInFlow_co "><span>\[\boxed{\quad
+\left\{ \mathcal T_{\{2+3\} \rightarrow 1} \right\}=\left\{ \mathcal T_{2 \rightarrow 1} \right\}+\left\{\mathcal T_{3 \rightarrow 1} \right\}
+\quad}\]</span></div></figure></div></div></div><div class="warning pBk"><h5 class="pBk_ti"><span><i class="type"><span class="label">Attention</span></i><span class="hidden"> : </span><span class="title">Addition de deux torseurs</span></span></h5><div class="pBk_co"><div class="rBk "><p>Pour pouvoir additionner les composantes de deux torseurs, ceux-ci doivent être réduits en un même point.</p></div></div></div></div></section></div></section><section class="hBk expUcDiv"><h3 class="hBk_ti"><span>Torseurs particuliers</span></h3><div class="hBk_co "><section class="hBk expUcDiv"><h4 class="hBk_ti"><span>Torseur à résultante : glisseur</span></h4><div class="hBk_co "><div class="remind pBk"><h5 class="pBk_ti"><span><i class="type"><span class="label">Rappel</span></i><span class="hidden"> : </span><span class="title">Glisseur</span></span></h5><div class="pBk_co"><div class="rBk "><p>Un torseur est un <strong class="txt_emp_is ">glisseur</strong> s'il existe un point P où le moment est nul.</p></div><div class="rBk res"><figure role="group" class="resInFlow latex"><div class="resInFlow_co "><span>\[\boxed{ \quad\{ \mathcal T_{2 \rightarrow 1} \}={\vphantom{\left\{\begin{array}{ccc}\overrightarrow{R_{2\rightarrow 1}} \\\overrightarrow{M_{A} (2\rightarrow 1)}\end{array}\right\}}}_{A}\left \{ \begin{array}{c}\overrightarrow{R}_{2\rightarrow 1} \\\overrightarrow{M}_{A, \,2\rightarrow 1}\end{array} \right \}={\vphantom{\left\{\begin{array}{ccc}\overrightarrow{R_{2\rightarrow 1}} \\\overrightarrow{M_{A} (2\rightarrow 1)}\end{array}\right\}}}_{P}\left \{ \begin{array}{c}\overrightarrow{R}_{2\rightarrow 1} \\\vec 0\end{array} \right \} \quad}\]</span></div></figure></div></div></div><div class="remark pBk noTitle"><h5 class="pBk_ti"><span><i class="type"><span class="label">Remarque</span></i><span class="hidden"> : </span><span class="title" ></span></span></h5><div class="pBk_co"><div class="rBk "><div class="txtRes "><div class="txt "><p>Un glisseur est utilisé pour modéliser une force. Ses éléments de réduction restent identiques en tout point du support de cette force, soit en tout point de la droite <span class="txt_mathtex_tl "><span>\((P, \overrightarrow{R}_{2\rightarrow 1})\)</span></span></p></div><div class="img rgt "><figure role="group" class="resInFlow image" aria-label=""><div class="resInFlow_co "><a href="../res/glisseur.PNG" class="imgZoom" target="_blank" onclick="scImageMgr.loading(); return false;" title="Cliquez pour agrandir (nouvelle fenêtre)"><img src="../res/glisseur_1.PNG" width="300" height="90" alt="" ></img></a></div></figure></div></div></div><div class="rBk "><p><strong class="txt_emp_is ">Preuve :</strong></p></div><div class="rBk res"><figure role="group" class="resInFlow image" aria-label=""><div class="resInFlow_co "><img src="../res/BLANC_5cm.PNG" width="14" height="128" alt="" ></img></div></figure></div></div></div></div></section><section class="hBk expUcDiv"><h4 class="hBk_ti"><span>Torseur couple</span></h4><div class="hBk_co "><div class="remind pBk"><h5 class="pBk_ti"><span><i class="type"><span class="label">Rappel</span></i><span class="hidden"> : </span><span class="title">Torseur couple</span></span></h5><div class="pBk_co"><div class="rBk "><p>Un couple est un torseur dont la résultante est nulle.</p></div><div class="rBk res"><figure role="group" class="resInFlow latex"><div class="resInFlow_co "><span>\[\boxed{ \quad
+\{ \mathcal T_{2 \rightarrow 1} \}
+=
+{\vphantom{\left\{\begin{array}{ccc}\overrightarrow{R_{2\rightarrow 1}} \\\overrightarrow{M_{A} (2\rightarrow 1)}\end{array}\right\}}}
+_{A}
+\left \{ \begin{array}{c}\vec 0 \\\overrightarrow{M}_{A, \,2\rightarrow 1}\end{array} \right \}
+\quad }
+\]</span></div></figure></div></div></div><div class="iBk info"><div class="iBk_co "><div class="rBk res"><figure role="group" class="resInFlow image" aria-label=""><div class="resInFlow_co "><img src="../res/BLANC_1cm.PNG" width="46" height="35" alt="" ></img></div></figure></div></div></div><div class="example pBk"><h5 class="pBk_ti"><span><i class="type"><span class="label">Exemple</span></i><span class="hidden"> : </span><span class="title">Couple de forces</span></span></h5><div class="pBk_co"><div class="rBk "><p>Soient deux actions mécaniques exercées par chacune des mains d'un utilisateur aux extrémités d'une clé, modélisables par deux glisseurs en B et en C :</p></div><div class="rBk res"><figure role="group" class="resInFlow image" aria-label=""><div class="resInFlow_co "><img src="../res/couple.PNG" width="475" height="236" alt="" ></img></div></figure></div><div class="rBk res"><figure role="group" class="resInFlow latex"><div class="resInFlow_co "><span>\[ \quad\{ \mathcal T_{\text{ main 1 }\rightarrow \text{ clé }} \}
+=
+{\vphantom{\left\{\begin{array}{ccc}\overrightarrow{R_{2\rightarrow 1}} \\
+\overrightarrow{M_{A} (2\rightarrow 1)}\end{array}\right\}}}
+_{B}
+\left \{ \begin{array}{c}\overrightarrow{F}_{\text{ main 1 }\rightarrow \text{ clé }} \\
+\vec 0\end{array} \right \} 
+ \quad 
+\text{ et }  
+\quad
+ \quad\{ \mathcal T_{\text{ main2}\rightarrow \text{ clé }} \}
+={\vphantom{\left\{\begin{array}{ccc}\overrightarrow{R_{2\rightarrow 1}} \\
+\overrightarrow{M_{A} (2\rightarrow 1)}\end{array}\right\}}}
+_{C}
+\left \{ \begin{array}{c}\overrightarrow{F}_{\text{ main 2 }\rightarrow \text{ clé }} \\
+\vec 0\end{array} \right \} \]</span></div></figure></div><div class="rBk "><p>Dans le cas où les deux forces <span class="txt_mathtex_tl "><span>\(\overrightarrow{F}_{\text{ main 1 }\rightarrow \text{ clé }}\)</span></span> et <span class="txt_mathtex_tl "><span>\(\overrightarrow{F}_{\text{ main 2 }\rightarrow \text{ clé }}\)</span></span> ont même direction, même norme et sont de sens opposés on parle de <strong class="txt_emp_is ">couple de forces</strong> :</p></div><div class="rBk res"><figure role="group" class="resInFlow latex"><div class="resInFlow_co "><span>\[\overrightarrow{F}_{\text{ main 2 }\rightarrow \text{ clé }} = -\,\overrightarrow{F}_{\text{ main 1 }\rightarrow \text{ clé }}=F\,\vec x, \quad \text{ avec } \quad  F=\Vert \overrightarrow{F}_{\text{main 1}\rightarrow \text{ clé }}\Vert=\Vert \overrightarrow{F}_{\text{main 2}\rightarrow \text{ clé }}\Vert\]</span></div></figure></div><div class="rBk "><p>Et donc la résultante des actions mécaniques exercées par l'utilisateur sur la clé est nulle :</p></div><div class="rBk res"><figure role="group" class="resInFlow latex"><div class="resInFlow_co "><span>\[\overrightarrow{R}_{\text{ untilisateur }\rightarrow \text{ clé }}=\overrightarrow{F}_{\text{ main 2 }\rightarrow \text{ clé }} + \,\overrightarrow{F}_{\text{ main 1 }\rightarrow \text{ clé }}=F\,\vec x - F\,\vec x =\vec 0\]</span></div></figure></div><div class="rBk "><p>De plus, les moments au point A de chacune de ces forces sont identiques :</p></div><div class="rBk res"><figure role="group" class="resInFlow latex"><div class="resInFlow_co "><span>\[\overrightarrow{M_{A} (\overrightarrow{F}_{\text{ main 1 }\rightarrow \text{ clé }})}=\overrightarrow{M_{A} (\overrightarrow{F}_{\text{ main 2 }\rightarrow \text{ clé }})}= +\, F.d \, \vec z\]</span></div></figure></div><div class="rBk "><p>Donc le moment résultant des actions mécaniques exercées par l'utilisateur sur la clé correspondant à la somme des moments exercés par chacune des mains sur la clé s'écrit :</p></div><div class="rBk res"><figure role="group" class="resInFlow latex"><div class="resInFlow_co "><span>\[\overrightarrow{M}_{A, \text{ utilisateur }\rightarrow \text{ clé }}
+=
+\overrightarrow{M_{A} (\overrightarrow{F}_{\text{ main 1 }\rightarrow \text{ clé }})}
++
+\overrightarrow{M_{A} (\overrightarrow{F}_{\text{ main 2 }\rightarrow \text{ clé }})}= 2\, F.d \, \vec z\]</span></div></figure></div><div class="rBk "><p>On peut ainsi donner le torseur résultant de l'action mécanique de l'utilisateur sur la clé :</p></div><div class="rBk res"><figure role="group" class="resInFlow latex"><div class="resInFlow_co "><span>\[\{ \mathcal T_{\text{ utilisateur }\rightarrow \text{ clé }} \}
+=
+{\vphantom{\left\{\begin{array}{ccc}\overrightarrow{R_{2\rightarrow 1}} \\\overrightarrow{M_{A} (2\rightarrow 1)}\end{array}\right\}}}
+_{A}
+\left \{ \begin{array}{c}\overrightarrow{R}_{\text{ utilisateur }\rightarrow \text{ clé }} \\
+\overrightarrow{M}_{A, \text{ utilisateur }\rightarrow \text{ clé }}
+\end{array} \right \}=
+{\vphantom{\left\{\begin{array}{ccc}\overrightarrow{R_{2\rightarrow 1}} \\\overrightarrow{M_{A} (2\rightarrow 1)}\end{array}\right\}}}
+_{A}
+\left \{ \begin{array}{c}\vec 0 \\
+2F.d \, \vec z
+\end{array} \right \} \quad \textit{(Torseur couple)}
+\]</span></div></figure></div></div></div><div class="remark pBk noTitle"><h5 class="pBk_ti"><span><i class="type"><span class="label">Remarque</span></i><span class="hidden"> : </span><span class="title" ></span></span></h5><div class="pBk_co"><div class="rBk "><p>Un torseur couple a les mêmes éléments de réduction en tout point de l'espace.</p></div><div class="rBk "><p><strong class="txt_emp_is ">Preuve :</strong></p></div><div class="rBk res"><figure role="group" class="resInFlow image" aria-label=""><div class="resInFlow_co "><img src="../res/BLANC_5cm.PNG" width="14" height="128" alt="" ></img></div></figure></div></div></div></div></section></div></section></div></section></div></div><div id="navigation" tabindex="-1"><hr class="hidden" ></hr><nav class="pageTurner" role="navigation"><ul><li class="pagePrev"><a rel="prev" target="_self" href="module_Cours_C05_13.html" class="btnNav prev" title="Précédent (Moment d&apos;une force en un point)"><span>Précédent</span></a></li><li class="pageNext"><a rel="next" target="_self" href="module_Cours_C05_4.html" class="btnNav next" title="Suivant (Modèles des actions mécaniques usuelles)"><span>Suivant</span></a></li></ul></nav></div></div><div id="toolbox"><nav aria-label="menu principal" class="pageSelector" id="menu" role="navigation" tabindex="-1"><hr class="hidden" ></hr><ul class="mnu static" data-totalPages="32"><li class="sel_no anc_no type_l  dpt_0 obj"><div class="lbl type_l" id="module_Cours_C05_1.html"><a href="module_Cours_C05_1.html" target="_self" class="item"><span>Objectifs</span></a></div></li><li class="sel_no anc_no type_b  type_b_c dpt_0 ueDiv"><div class="lbl type_b" id="module_Cours_C05_2.html"><a href="module_Cours_C05_2.html" target="_self" class="item"><span>Définitions</span></a></div></li><li class="sel_no anc_yes type_b  dpt_0 ueDiv"><div class="lbl type_b" id="module_Cours_C05_3.html"><a href="module_Cours_C05_3.html" target="_self" class="item" type="up"><span>Modélisation d'une action mécanique</span></a></div><ul class="sub mnu_open"><li class="sel_no anc_no type_l  dpt_1 expUc"><div class="lbl type_l" id="module_Cours_C05_12.html"><a href="module_Cours_C05_12.html" target="_self" class="item"><span>Notion de force</span></a></div></li><li class="sel_no anc_no type_l  dpt_1 expUc"><div class="lbl type_l" id="module_Cours_C05_13.html"><a href="module_Cours_C05_13.html" target="_self" class="item"><span>Moment d'une force en un point</span></a></div></li><li class="sel_yes anc_no type_l  dpt_1 expUc"><div class="lbl type_l" id="module_Cours_C05_14.html"><span class="item"><span>Torseur d'une action mécanique transmissible</span></span></div></li></ul></li><li class="sel_no anc_no type_b  type_b_c dpt_0 ueDiv"><div class="lbl type_b" id="module_Cours_C05_4.html"><a href="module_Cours_C05_4.html" target="_self" class="item"><span>Modèles des actions mécaniques usuelles</span></a></div></li><li class="sel_no anc_no type_b  type_b_c dpt_0 ueDiv"><div class="lbl type_b" id="module_Cours_C05_5.html"><a href="module_Cours_C05_5.html" target="_self" class="item"><span>Actions mécaniques transmissibles par les liaisons normalisées</span></a></div></li><li class="sel_no anc_no type_b  type_b_c dpt_0 ueDiv"><div class="lbl type_b" id="module_Cours_C05_6.html"><a href="module_Cours_C05_6.html" target="_self" class="item"><span>Actions mécaniques réparties : du modèle local au modèle global</span></a></div></li><li class="sel_no anc_no type_b  type_b_c dpt_0 ueDiv"><div class="lbl type_b" id="module_Cours_C05_7.html"><a href="module_Cours_C05_7.html" target="_self" class="item"><span>Modélisation des phénomènes de frottement</span></a></div></li><li class="sel_no anc_no type_b  type_b_c dpt_0 ueDiv"><div class="lbl type_b" id="module_Cours_C05_8.html"><a href="module_Cours_C05_8.html" target="_self" class="item"><span>Résistance au roulement et au pivotement</span></a></div></li></ul></nav><div id="tools" tabindex="-1"><hr class="hidden" ></hr><nav class="headingSelector" role="navigation"><ul class="mnu tools"><li class="anc_no home" data-position="uncle"><div class="lbl"><a href="module_Cours_C05.html" target="_self" class="item" type="index" title="Page d&apos;accueil du module"><span>Accueil</span></a></div></li><li class="anc_yes module" data-position="ancestor"><div class="lbl"><span class="item"><span>Module</span></span></div></li></ul></nav></div></div></main><footer id="footer" tabindex="-1"><hr class="hidden" ></hr><a id="linkSp" target="_blank" href="https://doc.scenari.software/Opale" title="Réalisé avec SCENARI (nouvelle fenêtre)"><span><img alt="Réalisé avec Scenari (nouvelle fenêtre)" src="../skin/img/tpl/scBtn.png" ></img></span></a></footer></div>
+		<script src="../skin/js/skin.js" ></script>
+		<script>/*<![CDATA[*/
+/* 5 */ outMgr.init();
+/* 5 */ scCodeMgr.init();
+/* 5 */ scImageMgr.init();
+/* 0 */ tplMgr.init({accessBar:"none",themeMode:"none",addMenuBtn:false});
+/*]]>*/</script>
+		<script>/*<![CDATA[*/mathjaxMgr.init();/*]]>*/</script></body></html>

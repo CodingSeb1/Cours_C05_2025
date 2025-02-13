@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="fr" xml:lang="fr" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Résistance au pivotement [C05 : Modéliser des actions mécaniques]</title>
+		<meta charset="UTF-8" ></meta>
+		<meta name="generator" content="SCENARI 6.3.11 / OpaleExtEmeraude 24.1.0" ></meta>
+		<meta name="revision" content="2025-02-13 01:30" ></meta>
+		<link rel="start" href="module_Cours_C05.html" title="C05 : Modéliser des actions mécaniques" ></link>
+		<meta name="author" content="S. Lemasle
+" ></meta>
+		<meta name="keywords" content="" ></meta>
+		<meta name="date" content="2025" ></meta>
+		<meta name="viewport" content="width=device-width, initial-scale=1" ></meta>
+		<link rel="stylesheet" type="text/css" href="../lib-md/w_scCodeMgr/scCodeMgr.css" ></link>
+		<link rel="stylesheet" type="text/css" href="../lib-md/w_tePlayer/tePlayer.css" ></link>
+		<script>/*<![CDATA[*/
+/*0*/ var scServices = {id:"m72nxarx"};
+/*1*/ window.scLoadParams = {destUri:"/co/module_Cours_C05_32.html", pathToRoot:"../"};
+/*]]>*/</script>
+		<script src="../lib-sc/scCoLib.js" ></script>
+		<script src="../lib-sc/scSiLib.js" ></script>
+		<script src="../lib-sc/scTiLib.js" ></script>
+		<script src="../lib-sc/scPaLib.js" ></script>
+		<script src="../lib-md/s_assmnt.js" ></script>
+		<script src="../lib-sc/scMapMgr.js" ></script>
+		<script src="../lib-sc/scDynUiMgr.js" ></script>
+		<script src="../lib-sc/scTooltipMgr.js" ></script>
+		<script src="../lib-sc/scDragMgr.js" ></script>
+		<script src="../lib-sc/scAssmntMgr.js" ></script>
+		<script src="../lib-md/w_teMgr/teLoader.js" ></script>
+		<script src="../lib-md/w_tplMgr/tplMgr.js" ></script>
+		<script src="../lib-md/s_scSearch/jsSearch.js" ></script>
+		<script src="../lib-md/w_mathjax/mathjaxMgr.js" ></script>
+		<script src="../lib-md/w_tePlayer/tePlayer.js" ></script>
+		<script src="../lib-md/w_scCodeMgr/scCodeMgr.js" ></script>
+		<script src="../lib-md/w_searchMgr/searchMgr.js" ></script>
+		<script src="../lib-md/w_scImageMgr/scImageMgr.js" ></script>
+		<script src="../lib-md/w_outMgr/outMgr.js" ></script>
+		<script>/*<![CDATA[*/
+/*0*/ try{if(window.opener && window.opener.scServices && window.opener.scServices.id == scServices.id) scServices = window.opener.scServices; else if(window.parent && window.parent.scServices && window.parent.scServices.id == scServices.id) scServices = window.parent.scServices;}catch(e){}
+scCodeMgr.registerCode("des:div.code");
+
+scImageMgr.registerAdaptedImage("ide:content/des:figure.resInFlow/des:img");
+
+scImageMgr.registerGallery("des:div.galFra");
+
+scImageMgr.registerSequence("des:div.seqFra");
+
+scImageMgr.registerSvg("des:svg");
+scImageMgr.registerZoom("des:a.svgZoom",{type:"svg",svgMax:1,toolbar:1,titlePath:"par:/nsi:/des:span.capTi"});
+
+scImageMgr.registerZoom("des:a.imgZoom",{toolbar:1,mag:1,titlePath:"par:/nsi:/des:span.capTi"});
+
+tePlayerMgr.init();
+/*]]>*/</script>
+		<link rel="shortcut icon" type="image/png" href="../skin/img/favicon.png" ></link>
+		<meta name="robots" content="index,follow" ></meta>
+		<style ></style>
+		<link type="text/css" rel="stylesheet" href="../skin/css/main.css" media="all" ></link>
+		<link type="text/css" rel="stylesheet" href="../skin/css/skin.css" media="all" ></link>
+		<link type="text/css" rel="stylesheet" href="../skin/css/print.css" media="print" ></link>
+		<script>/*<![CDATA[*/
+outMgr.declareOutline("outline.txt");
+	/*]]>*/</script>
+</head>
+	<body class="default module last expUc">
+		<div id="root"><header id="header"><h1><span>C05 : Modéliser des actions mécaniques</span></h1><nav role="navigation"><ul id="accessibility"><li class="waiContent"><a href="#content"><span>contenu</span></a></li><li class="waiMenu"><a href="#menu"><span>menu</span></a></li><li class="waiNav"><a href="#navigation"><span>navigation</span></a></li><li class="waiTools"><a href="#tools"><span>outils</span></a></li></ul></nav></header><main id="main" role="main"><div id="document"><div id="content" tabindex="-1"><div class="scroller"><hr class="hidden" ></hr><section class="hBk article expUc"><h2 class="hBk_ti"><span>Résistance au pivotement</span></h2><div class="hBk_co "><div class="iBk info"><div class="iBk_co "><div class="rBk "><p>La résistance au pivotement génère un moment en I qui s'oppose au pivotement du solide <span class="txt_mathtex_tl "><span>\(S_1\)</span></span> par rapport à <span class="txt_mathtex_tl "><span>\(S_2\)</span></span> si <span class="txt_mathtex_tl "><span>\(\overrightarrow{\Omega}_P(S_1/S_2)\neq \vec 0\)</span></span> ou la la tendance au pivotement de <span class="txt_mathtex_tl "><span>\(S_1\)</span></span> sur <span class="txt_mathtex_tl "><span>\(S_2\)</span></span> si <span class="txt_mathtex_tl "><span>\(\overrightarrow{\Omega}_P(S_1/S_2)= \vec 0\)</span></span></p></div><div class="rBk res"><figure role="group" class="resInFlow latex"><div class="resInFlow_co "><span>\[1^{er}\text{ cas : }
+\quad\overrightarrow{\Omega}_P(S_1/S_2)\neq \vec 0 
+\quad \Rightarrow \quad 
+\left\{ \begin{array}{l}
+\overrightarrow{M}_{I, \,2\rightarrow 1}^P\ \wedge \, \overrightarrow{\Omega}_P(S_1/S_2)=\vec{0} \text{ et }\overrightarrow{M}_{I, \,2\rightarrow 1}^P\ \cdot \, \overrightarrow{\Omega}_P(S_1/S_2)&lt;0 \\
+ \\
+\Vert \, \overrightarrow{M}_{I, \,2\rightarrow 1}^P\,\Vert= \eta\,\Vert \, \overrightarrow{N}_{2\rightarrow 1}\,\Vert 
+\end {array}\right.
+\\\\\\\]</span></div></figure></div><div class="rBk res"><figure role="group" class="resInFlow latex"><div class="resInFlow_co "><span>\[2^{e}\text{ cas : }
+\quad\overrightarrow{\Omega}_P(S_1/S_2)= \vec 0 
+\, \, \quad \Rightarrow \quad 
+\quad \Vert \, \overrightarrow{M}_{I, \,2\rightarrow 1}^P\,\Vert \leq \eta\,\Vert \, \overrightarrow{N}_{2\rightarrow 1}\,\Vert\]</span></div></figure></div><div class="rBk "><p><span class="txt_mathtex_tl "><span>\(\eta\)</span></span> est le <strong class="txt_emp_is ">paramètre de résistance au pivotement</strong>. Il est homogène à une longueur (en <span class="txt_mathtex_tl "><span>\(m\)</span></span>).</p></div><div class="rBk "><table class="txt_tb "><caption class="txt_tbcp ">Quelques valeurs moyennes du paramètre de résistance au pivotement (à titre indicatif)</caption><colgroup><col style="width:324px;width:42.5ch;" ></col><col style="width:104px;width:14.28ch;" ></col></colgroup><tr class="txt_head_tbtr "><th scope="col"><p>Matériaux en contact</p></th><th scope="col"><p><span class="txt_mathtex_tl "><span>\(\eta\)</span></span> en mm</p></th></tr><tr><td><p>Acier trempé sur acier trempé</p></td><td><p>0,005 à 0,01</p></td></tr><tr><td><p>Fonte grise sur acier trempé</p></td><td><p>0,5</p></td></tr><tr><td><p>Pneu sur sol en bon état</p></td><td><p>5 à 20</p></td></tr></table></div></div></div></div></section></div></div><div id="navigation" tabindex="-1"><hr class="hidden" ></hr><nav class="pageTurner" role="navigation"><ul><li class="pagePrev"><a rel="prev" target="_self" href="module_Cours_C05_31.html" class="btnNav prev" title="Précédent (Résistance au roulement)"><span>Précédent</span></a></li><li class="pageNext"><span class="btnNav next"><span>Fin</span></span></li></ul></nav></div></div><div id="toolbox"><nav aria-label="menu principal" class="pageSelector" id="menu" role="navigation" tabindex="-1"><hr class="hidden" ></hr><ul class="mnu static" data-totalPages="32"><li class="sel_no anc_no type_l  dpt_0 obj"><div class="lbl type_l" id="module_Cours_C05_1.html"><a href="module_Cours_C05_1.html" target="_self" class="item"><span>Objectifs</span></a></div></li><li class="sel_no anc_no type_b  type_b_c dpt_0 ueDiv"><div class="lbl type_b" id="module_Cours_C05_2.html"><a href="module_Cours_C05_2.html" target="_self" class="item"><span>Définitions</span></a></div></li><li class="sel_no anc_no type_b  type_b_c dpt_0 ueDiv"><div class="lbl type_b" id="module_Cours_C05_3.html"><a href="module_Cours_C05_3.html" target="_self" class="item"><span>Modélisation d'une action mécanique</span></a></div></li><li class="sel_no anc_no type_b  type_b_c dpt_0 ueDiv"><div class="lbl type_b" id="module_Cours_C05_4.html"><a href="module_Cours_C05_4.html" target="_self" class="item"><span>Modèles des actions mécaniques usuelles</span></a></div></li><li class="sel_no anc_no type_b  type_b_c dpt_0 ueDiv"><div class="lbl type_b" id="module_Cours_C05_5.html"><a href="module_Cours_C05_5.html" target="_self" class="item"><span>Actions mécaniques transmissibles par les liaisons normalisées</span></a></div></li><li class="sel_no anc_no type_b  type_b_c dpt_0 ueDiv"><div class="lbl type_b" id="module_Cours_C05_6.html"><a href="module_Cours_C05_6.html" target="_self" class="item"><span>Actions mécaniques réparties : du modèle local au modèle global</span></a></div></li><li class="sel_no anc_no type_b  type_b_c dpt_0 ueDiv"><div class="lbl type_b" id="module_Cours_C05_7.html"><a href="module_Cours_C05_7.html" target="_self" class="item"><span>Modélisation des phénomènes de frottement</span></a></div></li><li class="sel_no anc_yes type_b  dpt_0 ueDiv"><div class="lbl type_b" id="module_Cours_C05_8.html"><a href="module_Cours_C05_8.html" target="_self" class="item" type="up"><span>Résistance au roulement et au pivotement</span></a></div><ul class="sub mnu_open"><li class="sel_no anc_no type_l  dpt_1 expUc"><div class="lbl type_l" id="module_Cours_C05_30.html"><a href="module_Cours_C05_30.html" target="_self" class="item"><span>Introduction</span></a></div></li><li class="sel_no anc_no type_l  dpt_1 expUc"><div class="lbl type_l" id="module_Cours_C05_31.html"><a href="module_Cours_C05_31.html" target="_self" class="item"><span>Résistance au roulement</span></a></div></li><li class="sel_yes anc_no type_l  dpt_1 expUc"><div class="lbl type_l" id="module_Cours_C05_32.html"><span class="item"><span>Résistance au pivotement</span></span></div></li></ul></li></ul></nav><div id="tools" tabindex="-1"><hr class="hidden" ></hr><nav class="headingSelector" role="navigation"><ul class="mnu tools"><li class="anc_no home" data-position="uncle"><div class="lbl"><a href="module_Cours_C05.html" target="_self" class="item" type="index" title="Page d&apos;accueil du module"><span>Accueil</span></a></div></li><li class="anc_yes module" data-position="ancestor"><div class="lbl"><span class="item"><span>Module</span></span></div></li></ul></nav></div></div></main><footer id="footer" tabindex="-1"><hr class="hidden" ></hr><a id="linkSp" target="_blank" href="https://doc.scenari.software/Opale" title="Réalisé avec SCENARI (nouvelle fenêtre)"><span><img alt="Réalisé avec Scenari (nouvelle fenêtre)" src="../skin/img/tpl/scBtn.png" ></img></span></a></footer></div>
+		<script src="../skin/js/skin.js" ></script>
+		<script>/*<![CDATA[*/
+/* 5 */ outMgr.init();
+/* 5 */ scCodeMgr.init();
+/* 5 */ scImageMgr.init();
+/* 0 */ tplMgr.init({accessBar:"none",themeMode:"none",addMenuBtn:false});
+/*]]>*/</script>
+		<script>/*<![CDATA[*/mathjaxMgr.init();/*]]>*/</script></body></html>

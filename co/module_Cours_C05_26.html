@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="fr" xml:lang="fr" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Modèle global d'une action mécanique [C05 : Modéliser des actions mécaniques]</title>
+		<meta charset="UTF-8" ></meta>
+		<meta name="generator" content="SCENARI 6.3.11 / OpaleExtEmeraude 24.1.0" ></meta>
+		<meta name="revision" content="2025-02-13 01:30" ></meta>
+		<link rel="start" href="module_Cours_C05.html" title="C05 : Modéliser des actions mécaniques" ></link>
+		<meta name="author" content="S. Lemasle
+" ></meta>
+		<meta name="keywords" content="" ></meta>
+		<meta name="date" content="2025" ></meta>
+		<meta name="viewport" content="width=device-width, initial-scale=1" ></meta>
+		<link rel="stylesheet" type="text/css" href="../lib-md/w_scCodeMgr/scCodeMgr.css" ></link>
+		<link rel="stylesheet" type="text/css" href="../lib-md/w_tePlayer/tePlayer.css" ></link>
+		<script>/*<![CDATA[*/
+/*0*/ var scServices = {id:"m72nxarx"};
+/*1*/ window.scLoadParams = {destUri:"/co/module_Cours_C05_26.html", pathToRoot:"../"};
+/*]]>*/</script>
+		<script src="../lib-sc/scCoLib.js" ></script>
+		<script src="../lib-sc/scSiLib.js" ></script>
+		<script src="../lib-sc/scTiLib.js" ></script>
+		<script src="../lib-sc/scPaLib.js" ></script>
+		<script src="../lib-md/s_assmnt.js" ></script>
+		<script src="../lib-sc/scMapMgr.js" ></script>
+		<script src="../lib-sc/scDynUiMgr.js" ></script>
+		<script src="../lib-sc/scTooltipMgr.js" ></script>
+		<script src="../lib-sc/scDragMgr.js" ></script>
+		<script src="../lib-sc/scAssmntMgr.js" ></script>
+		<script src="../lib-md/w_teMgr/teLoader.js" ></script>
+		<script src="../lib-md/w_tplMgr/tplMgr.js" ></script>
+		<script src="../lib-md/s_scSearch/jsSearch.js" ></script>
+		<script src="../lib-md/w_mathjax/mathjaxMgr.js" ></script>
+		<script src="../lib-md/w_tePlayer/tePlayer.js" ></script>
+		<script src="../lib-md/w_scCodeMgr/scCodeMgr.js" ></script>
+		<script src="../lib-md/w_searchMgr/searchMgr.js" ></script>
+		<script src="../lib-md/w_scImageMgr/scImageMgr.js" ></script>
+		<script src="../lib-md/w_outMgr/outMgr.js" ></script>
+		<script>/*<![CDATA[*/
+/*0*/ try{if(window.opener && window.opener.scServices && window.opener.scServices.id == scServices.id) scServices = window.opener.scServices; else if(window.parent && window.parent.scServices && window.parent.scServices.id == scServices.id) scServices = window.parent.scServices;}catch(e){}
+scCodeMgr.registerCode("des:div.code");
+
+scImageMgr.registerAdaptedImage("ide:content/des:figure.resInFlow/des:img");
+
+scImageMgr.registerGallery("des:div.galFra");
+
+scImageMgr.registerSequence("des:div.seqFra");
+
+scImageMgr.registerSvg("des:svg");
+scImageMgr.registerZoom("des:a.svgZoom",{type:"svg",svgMax:1,toolbar:1,titlePath:"par:/nsi:/des:span.capTi"});
+
+scImageMgr.registerZoom("des:a.imgZoom",{toolbar:1,mag:1,titlePath:"par:/nsi:/des:span.capTi"});
+
+tePlayerMgr.init();
+/*]]>*/</script>
+		<link rel="shortcut icon" type="image/png" href="../skin/img/favicon.png" ></link>
+		<meta name="robots" content="index,follow" ></meta>
+		<style ></style>
+		<link type="text/css" rel="stylesheet" href="../skin/css/main.css" media="all" ></link>
+		<link type="text/css" rel="stylesheet" href="../skin/css/skin.css" media="all" ></link>
+		<link type="text/css" rel="stylesheet" href="../skin/css/print.css" media="print" ></link>
+		<script>/*<![CDATA[*/
+outMgr.declareOutline("outline.txt");
+	/*]]>*/</script>
+</head>
+	<body class="default module expUc">
+		<div id="root"><header id="header"><h1><span>C05 : Modéliser des actions mécaniques</span></h1><nav role="navigation"><ul id="accessibility"><li class="waiContent"><a href="#content"><span>contenu</span></a></li><li class="waiMenu"><a href="#menu"><span>menu</span></a></li><li class="waiNav"><a href="#navigation"><span>navigation</span></a></li><li class="waiTools"><a href="#tools"><span>outils</span></a></li></ul></nav></header><main id="main" role="main"><div id="document"><div id="content" tabindex="-1"><div class="scroller"><hr class="hidden" ></hr><section class="hBk article expUc"><h2 class="hBk_ti"><span>Modèle global d'une action mécanique</span></h2><div class="hBk_co "><div class="iBk info"><div class="iBk_co "><div class="rBk "><p>La modélisation locale des AM est très lourde à manipuler. Pour passer du modèle local au modèle global d'une action mécanique, il suffit de faire la somme (par intégration) des actions mécaniques élémentaires.</p></div></div></div><section class="hBk expUcDiv"><h3 class="hBk_ti"><span>Répartition linéique d'effort</span></h3><div class="hBk_co "><div class="iBk info"><div class="iBk_co "><div class="rBk "><p>Soient <span class="txt_mathtex_tl "><span>\(S_1\)</span></span> et <span class="txt_mathtex_tl "><span>\(S_2\)</span></span> deux solides en contact linéique le long d'une ligne <span class="txt_mathtex_tl "><span>\(L\)</span></span>, sur laquelle s'exerce l'action mécanique de 2 sur 1.</p><p>On doit s'intéresser d'abord à l'action mécanique transmise localement, sur une ligne élémentaire (tronçon <span class="txt_mathtex_tl "><span>\(dL\)</span></span> de la ligne <span class="txt_mathtex_tl "><span>\(L\)</span></span>).</p></div><div class="rBk res"><figure role="group" class="resInFlow image" aria-label=""><div class="resInFlow_co "><img src="../res/repartition_lineiq.PNG" width="478" height="204" alt="" ></img></div></figure></div><div class="rBk "><ul class="txt_il "><li class="txt_ili "><p>Élément considéré : ligne élémentaire <span class="txt_mathtex_tl "><span>\(dL\)</span></span></p></li></ul><ul class="txt_il "><li class="txt_ili "><p>L'AM élémentaire de 2 sur 1 en un point M est modélisée par : <span class="txt_mathtex_tl "><span>\(\boxed{\overrightarrow{dF_{ 2\rightarrow 1}(M)}=f_L(M)\,\,dL \,\, \overrightarrow{u(M)}}\)</span></span></p><p>Elle est toujours orientée de 2 vers 1 pour ne pas rompre le contact.</p></li></ul><ul class="txt_il "><li class="txt_ili "><p><span class="txt_mathtex_tl "><span>\(f_L\)</span></span> : <strong class="txt_emp_is ">densité linéique d'effort</strong> (en <span class="txt_mathtex_tl "><span>\(N/m\)</span></span>), pouvant dépendre du point M dans le cas d'une répartition non uniforme.</p></li></ul></div><div class="rBk "><p>L'action mécanique globale, résultant de ce contact s'écrit, en un point A quelconque :</p></div><div class="rBk res"><figure role="group" class="resInFlow latex"><div class="resInFlow_co "><span>\[\boxed{\quad 
+\{ \mathcal T_{2 \rightarrow 1} \}
+=
+{\vphantom{\left\{\begin{array}{ccc}
+\overrightarrow{R_{2\rightarrow 1}} \\ 
+\overrightarrow{M_{A} (2\rightarrow 1)}
+\end{array}\right\}}}
+_{A} 
+\left \{ \begin{array}{c} 
+\overrightarrow{R}_{2\rightarrow 1} =\displaystyle\int_{L}\overrightarrow{dF_{ 2\rightarrow 1}(M)}\\ 
+\overrightarrow{M}_{A, \,2\rightarrow 1}=\displaystyle\int_{L} \overrightarrow{AM}\wedge \overrightarrow{dF_{ 2\rightarrow 1}(M)}
+\end{array} \right \} 
+\quad}\]</span></div></figure></div><div class="rBk "><p>Dans le cas particulier de l'action d'un contact entre deux solides<strong class="txt_emp_is "> sans frottement</strong>, la force élémentaire s'exerçant sur <span class="txt_mathtex_tl "><span>\(dL\)</span></span> s'écrit :</p></div><div class="rBk res"><figure role="group" class="resInFlow image" aria-label=""><div class="resInFlow_co "><img src="../res/repartition_liineiq_constante.PNG" width="316" height="109" alt="" ></img></div></figure></div></div></div><div class="iBk info"><div class="iBk_co "><div class="rBk res"><figure role="group" class="resInFlow image" aria-label=""><div class="resInFlow_co "><img src="../res/BLANC_05cm.PNG" width="1" height="1" alt="" ></img></div></figure></div></div></div></div></section><section class="hBk expUcDiv"><h3 class="hBk_ti"><span>Répartition surfacique d'effort</span></h3><div class="hBk_co "><div class="iBk info"><div class="iBk_co "><div class="rBk "><p>Soient <span class="txt_mathtex_tl "><span>\(S_1\)</span></span> et <span class="txt_mathtex_tl "><span>\(S_2\)</span></span> deux solides qui possèdent une surface S commune, sur laquelle s'exerce l'action mécanique de contact de 2 sur 1.</p><p>On doit s'intéresser d'abord à l'action mécanique transmise localement, sur une surface élémentaire <span class="txt_mathtex_tl "><span>\(dS\)</span></span>, puis l'intégrer sur la surface <span class="txt_mathtex_tl "><span>\(S\)</span></span> du solide.</p></div><div class="rBk res"><figure role="group" class="resInFlow image" aria-label=""><div class="resInFlow_co "><img src="../res/repartition_surfaciq.PNG" width="384" height="137" alt="" ></img></div></figure></div><div class="rBk "><ul class="txt_il "><li class="txt_ili "><p>Élément considéré : surface élémentaire <span class="txt_mathtex_tl "><span>\(dS\)</span></span></p></li><li class="txt_ili "><p>L'AM élémentaire de 2 sur 1 est modélisée par : <span class="txt_mathtex_tl "><span>\(\boxed{\overrightarrow{dF_{ 2\rightarrow 1}(M)}=f_s(M)\,\, dS \,\, \overrightarrow{u(M)}}\)</span></span></p><p>Elle est toujours orientée de 2 vers 1 pour ne pas rompre le contact.</p></li><li class="txt_ili "><p><span class="txt_mathtex_tl "><span>\(f_s\)</span></span> : <strong class="txt_emp_is ">densité surfacique d'effort</strong> ou pression surfacique (en <span class="txt_mathtex_tl "><span>\(N/m^2\)</span></span>), pouvant dépendre du point M dans le cas d'une répartition non uniforme.</p></li></ul></div><div class="rBk "><p>L'action mécanique globale, résultant de ce contact s'écrit, en un point A quelconque :</p></div><div class="rBk res"><figure role="group" class="resInFlow latex"><div class="resInFlow_co "><span>\[\boxed{\quad 
+\{ \mathcal T_{2 \rightarrow 1} \}
+=
+{\vphantom{\left\{\begin{array}{ccc}
+\overrightarrow{R_{2\rightarrow 1}} \\ 
+\overrightarrow{M_{A} (2\rightarrow 1)}
+\end{array}\right\}}}
+_{A} 
+\left \{ \begin{array}{c} 
+\overrightarrow{R}_{2\rightarrow 1} =\displaystyle\iint_{S} \overrightarrow{dF_{ 2\rightarrow 1}(M)}\\ 
+\overrightarrow{M}_{A, \,2\rightarrow 1}=\displaystyle\iint_{S} \overrightarrow{AM}\wedge \overrightarrow{dF_{ 2\rightarrow 1}(M)}
+\end{array} \right \} 
+\quad}\]</span></div></figure></div><div class="rBk "><p>Dans le cas particulier de l'action d'un fluide non visqueux sur un solide, ou d'un contact entre deux solides sans frottement, la force élémentaire s'exerçant sur <span class="txt_mathtex_tl "><span>\(dS\)</span></span> s'écrit :</p></div><div class="rBk res"><figure role="group" class="resInFlow image" aria-label=""><div class="resInFlow_co "><img src="../res/repartition_surfaciq_constante.PNG" width="215" height="67" alt="" ></img></div></figure></div><div class="rBk "><p>La force élémentaire est normale à la surface et fait intervenir la pression de contact <span class="txt_mathtex_tl "><span>\(p(M)\)</span></span> (en <span class="txt_mathtex_tl "><span>\(Pa\)</span></span>). De manière générale, la pression n'est pas uniforme et dépend du point <span class="txt_mathtex_tl "><span>\(M\)</span></span> considéré. De même, sauf dans le cas d'un contact plan, la normale au contact <span class="txt_mathtex_tl "><span>\(\overrightarrow{n(M)}\)</span></span> dépend également du point M considéré.</p><p>L'action globale s'écrit, en un point <span class="txt_mathtex_tl "><span>\(A\)</span></span> quelconque :</p></div><div class="rBk res"><figure role="group" class="resInFlow latex"><div class="resInFlow_co "><span>\[\{ \mathcal T_{2 \rightarrow 1} \}
+=
+{\vphantom{\left\{\begin{array}{ccc}
+\overrightarrow{R_{2\rightarrow 1}} \\ 
+\overrightarrow{M_{A} (2\rightarrow 1)}
+\end{array}\right\}}}
+_{A} 
+\left \{ \begin{array}{c} 
+\overrightarrow{R}_{2\rightarrow 1} =\displaystyle\iint_{S} p(M)\,dS \, \overrightarrow{n(M)}\\ 
+\overrightarrow{M}_{A, \,2\rightarrow 1}=\displaystyle\iint_{S} \overrightarrow{AM}\wedge p(M)\,dS \, \overrightarrow{n(M)}
+\end{array} \right \} \]</span></div></figure></div><div class="rBk "><p>Pour pouvoir conduire les calculs et obtenir le modèle global, il faut (<i class="txt_spec_is ">cf</i> TD) :</p><ul class="txt_il "><li class="txt_ili "><p>connaître la répartition de pression sur la surface de contact : uniforme, linéaire, etc...</p></li></ul><ul class="txt_il "><li class="txt_ili "><p>déterminer la normale au contact <span class="txt_mathtex_tl "><span>\(\overrightarrow{n(M)}\)</span></span> ;</p></li></ul><ul class="txt_il "><li class="txt_ili "><p>déterminer l'expression de l'élément d'intégration <span class="txt_mathtex_tl "><span>\(dS\)</span></span>.</p></li></ul></div></div></div><div class="iBk info"><div class="iBk_co "><div class="rBk res"><figure role="group" class="resInFlow image" aria-label=""><div class="resInFlow_co "><img src="../res/BLANC_05cm.PNG" width="1" height="1" alt="" ></img></div></figure></div></div></div></div></section><section class="hBk expUcDiv"><h3 class="hBk_ti"><span>Répartition volumique d'effort</span></h3><div class="hBk_co "><div class="iBk info"><div class="iBk_co "><div class="rBk "><p>On appelle action à distance toute action qui s'applique sur un système matériel S sans contact (action de la pesanteur, actions électromagnétiques, actions électrostatiques...).</p><p>Nous nous limiterons au cas des solides homogènes (masse volumique <span class="txt_mathtex_tl "><span>\(\rho\)</span></span> constante).</p></div><div class="rBk res"><figure role="group" class="resInFlow image" aria-label=""><div class="resInFlow_co "><img src="../res/repartition_volumiq.PNG" width="403" height="156" alt="" ></img></div></figure></div><div class="rBk "><ul class="txt_il "><li class="txt_ili "><p>Élément considéré : volume élémentaire <span class="txt_mathtex_tl "><span>\(dV\)</span></span></p></li><li class="txt_ili "><p>L'AM élémentaire à distance de l'extérieur sur S est modélisée par : <span class="txt_mathtex_tl "><span>\(\boxed{\overrightarrow{dF_{ ext\rightarrow S}(M)}=f_v(M)\,\, dV \,\, \overrightarrow{u(M)}}\)</span></span></p></li><li class="txt_ili "><p><span class="txt_mathtex_tl "><span>\(f_v\)</span></span> : <strong class="txt_emp_is ">densité volumique d'effort</strong> (en <span class="txt_mathtex_tl "><span>\(N/m^3\)</span></span>), pouvant dépendre du point M dans le cas d'une répartition non uniforme.</p></li></ul></div><div class="rBk "><p>L'action mécanique globale s'écrit, en un point <span class="txt_mathtex_tl "><span>\(A\)</span></span> quelconque :</p></div><div class="rBk res"><figure role="group" class="resInFlow latex"><div class="resInFlow_co "><span>\[\boxed{\quad 
+\{ \mathcal T_{ext \rightarrow S} \}
+=
+{\vphantom{\left\{\begin{array}{ccc}
+\overrightarrow{R_{ext\rightarrow S}} \\ 
+\overrightarrow{M_{A} (2\rightarrow S)}
+\end{array}\right\}}}
+_{A} 
+\left \{ \begin{array}{c} 
+\overrightarrow{R}_{ext\rightarrow 1} =\displaystyle\iiint_{V} \overrightarrow{dF_{ ext\rightarrow S}(M)}\\ 
+\overrightarrow{M}_{A, \,ext\rightarrow 1}=\displaystyle\iiint_{V} \overrightarrow{AM}\wedge \overrightarrow{dF_{ ext\rightarrow S}(M)}
+\end{array} \right \} 
+\quad}\]</span></div></figure></div></div></div><div class="example pBk"><h4 class="pBk_ti"><span><i class="type"><span class="label">Exemple</span></i><span class="hidden"> : </span><span class="title">Cas particulier de la pesanteur</span></span></h4><div class="pBk_co"><div class="rBk "><p>Soit un solide S soumis à l'action mécanique de pesanteur.</p></div><div class="rBk res"><figure role="group" class="resInFlow image" aria-label=""><div class="resInFlow_co "><img src="../res/AM_repartie_pesanteur.PNG" width="345" height="146" alt="" ></img></div></figure></div><div class="rBk "><p>Un élément de volume <span class="txt_mathtex_tl "><span>\(dV\)</span></span> subit une force élémentaire telle que : <span class="txt_mathtex_tl "><span>\(\overrightarrow{dF_{pes\rightarrow S}(M)}= \rho(M) \,\vec g \,dV\)</span></span></p><p>En supposant de plus que le solide est homogène, <span class="txt_mathtex_tl "><span>\(\rho\,dV = dm\)</span></span> et donc : <span class="txt_mathtex_tl "><span>\(\overrightarrow{dF_{ pes\rightarrow S}}= \vec g \,dm\)</span></span></p></div><div class="rBk "><p>La résultante de l'action de pesanteur sur S est telle que :</p></div><div class="rBk res"><figure role="group" class="resInFlow latex"><div class="resInFlow_co "><span>\[\overrightarrow{R}_{pes\rightarrow S}=\displaystyle\iiint_V \overrightarrow{dF_{pes\rightarrow S}} = \iiint_V  \vec g\,dm=\vec g \iiint_V dm=m\,\vec g\]</span></div></figure></div><div class="rBk "><p>Le moment de l'action de la pesanteur sur 1 au point A s'écrit :</p></div><div class="rBk res"><figure role="group" class="resInFlow latex"><div class="resInFlow_co "><span>\[\overrightarrow{M}_{A,pes\rightarrow S}=\displaystyle\iiint_V \overrightarrow{AM} \wedge \overrightarrow{dF_{pes\rightarrow S}} =\iiint_V \overrightarrow{AM} \wedge \vec g\,dm=\underbrace{\left(\iiint_V \overrightarrow{AM} \,dm\right)}_{\begin{array}{c}\textit{voir la définition du }\\\textit{centre de gravité}\\\textit{ci-après}\end{array}} \wedge \;\vec g\]</span></div></figure></div><div class="rBk "><p>D'où l'expression du moment : <span class="txt_mathtex_tl "><span>\(\overrightarrow{M}_{A,pes\rightarrow S}=m \,\overrightarrow{AG} \wedge \vec g\)</span></span></p></div><div class="rBk "><p>On peut remarquer que ce moment est nul s'il est exprimé au point G. Le torseur d'action de la pesanteur est donc un glisseur :</p></div><div class="rBk res"><figure role="group" class="resInFlow latex"><div class="resInFlow_co "><span>\[\boxed{ \quad
+\{ \mathcal T_{pes \rightarrow S} \}
+=
+{\vphantom{\left\{\begin{array}{ccc}\overrightarrow{R_{2\rightarrow 1}} \\\overrightarrow{M_{A} (2\rightarrow 1)}\end{array}\right\}}}
+_{G}
+\left \{ \begin{array}{c}m.\vec g \\\vec 0
+\end{array} \right \}
+\quad }
+\]</span></div></figure></div><div class="rBk "><p>On retrouve ainsi le résultat donné au chapitre III. On peut de la même façon redémontrer les torseurs des actions mécaniques usuelles à partir des répartitions volumiques ou surfacique d'effort.</p></div></div></div><div class="def pBk"><h4 class="pBk_ti"><span><i class="type"><span class="label">Définition</span></i><span class="hidden"> : </span><span class="title">Centre de gravité</span></span></h4><div class="pBk_co"><div class="rBk "><p>Le centre de gravité d'un solide est défini par la relation suivante :</p></div><div class="rBk res"><figure role="group" class="resInFlow latex"><div class="resInFlow_co "><span>\[\boxed{ \quad\forall A,  \quad\overrightarrow{AG}=\frac 1 m \iiint_V{\overrightarrow{AM} \, dm} \quad }\]</span></div></figure></div></div></div></div></section></div></section></div></div><div id="navigation" tabindex="-1"><hr class="hidden" ></hr><nav class="pageTurner" role="navigation"><ul><li class="pagePrev"><a rel="prev" target="_self" href="module_Cours_C05_25.html" class="btnNav prev" title="Précédent (Point de vue local)"><span>Précédent</span></a></li><li class="pageNext"><a rel="next" target="_self" href="module_Cours_C05_7.html" class="btnNav next" title="Suivant (Modélisation des phénomènes de frottement)"><span>Suivant</span></a></li></ul></nav></div></div><div id="toolbox"><nav aria-label="menu principal" class="pageSelector" id="menu" role="navigation" tabindex="-1"><hr class="hidden" ></hr><ul class="mnu static" data-totalPages="32"><li class="sel_no anc_no type_l  dpt_0 obj"><div class="lbl type_l" id="module_Cours_C05_1.html"><a href="module_Cours_C05_1.html" target="_self" class="item"><span>Objectifs</span></a></div></li><li class="sel_no anc_no type_b  type_b_c dpt_0 ueDiv"><div class="lbl type_b" id="module_Cours_C05_2.html"><a href="module_Cours_C05_2.html" target="_self" class="item"><span>Définitions</span></a></div></li><li class="sel_no anc_no type_b  type_b_c dpt_0 ueDiv"><div class="lbl type_b" id="module_Cours_C05_3.html"><a href="module_Cours_C05_3.html" target="_self" class="item"><span>Modélisation d'une action mécanique</span></a></div></li><li class="sel_no anc_no type_b  type_b_c dpt_0 ueDiv"><div class="lbl type_b" id="module_Cours_C05_4.html"><a href="module_Cours_C05_4.html" target="_self" class="item"><span>Modèles des actions mécaniques usuelles</span></a></div></li><li class="sel_no anc_no type_b  type_b_c dpt_0 ueDiv"><div class="lbl type_b" id="module_Cours_C05_5.html"><a href="module_Cours_C05_5.html" target="_self" class="item"><span>Actions mécaniques transmissibles par les liaisons normalisées</span></a></div></li><li class="sel_no anc_yes type_b  dpt_0 ueDiv"><div class="lbl type_b" id="module_Cours_C05_6.html"><a href="module_Cours_C05_6.html" target="_self" class="item" type="up"><span>Actions mécaniques réparties : du modèle local au modèle global</span></a></div><ul class="sub mnu_open"><li class="sel_no anc_no type_l  dpt_1 expUc"><div class="lbl type_l" id="module_Cours_C05_25.html"><a href="module_Cours_C05_25.html" target="_self" class="item"><span>Point de vue local</span></a></div></li><li class="sel_yes anc_no type_l  dpt_1 expUc"><div class="lbl type_l" id="module_Cours_C05_26.html"><span class="item"><span>Modèle global d'une action mécanique</span></span></div></li></ul></li><li class="sel_no anc_no type_b  type_b_c dpt_0 ueDiv"><div class="lbl type_b" id="module_Cours_C05_7.html"><a href="module_Cours_C05_7.html" target="_self" class="item"><span>Modélisation des phénomènes de frottement</span></a></div></li><li class="sel_no anc_no type_b  type_b_c dpt_0 ueDiv"><div class="lbl type_b" id="module_Cours_C05_8.html"><a href="module_Cours_C05_8.html" target="_self" class="item"><span>Résistance au roulement et au pivotement</span></a></div></li></ul></nav><div id="tools" tabindex="-1"><hr class="hidden" ></hr><nav class="headingSelector" role="navigation"><ul class="mnu tools"><li class="anc_no home" data-position="uncle"><div class="lbl"><a href="module_Cours_C05.html" target="_self" class="item" type="index" title="Page d&apos;accueil du module"><span>Accueil</span></a></div></li><li class="anc_yes module" data-position="ancestor"><div class="lbl"><span class="item"><span>Module</span></span></div></li></ul></nav></div></div></main><footer id="footer" tabindex="-1"><hr class="hidden" ></hr><a id="linkSp" target="_blank" href="https://doc.scenari.software/Opale" title="Réalisé avec SCENARI (nouvelle fenêtre)"><span><img alt="Réalisé avec Scenari (nouvelle fenêtre)" src="../skin/img/tpl/scBtn.png" ></img></span></a></footer></div>
+		<script src="../skin/js/skin.js" ></script>
+		<script>/*<![CDATA[*/
+/* 5 */ outMgr.init();
+/* 5 */ scCodeMgr.init();
+/* 5 */ scImageMgr.init();
+/* 0 */ tplMgr.init({accessBar:"none",themeMode:"none",addMenuBtn:false});
+/*]]>*/</script>
+		<script>/*<![CDATA[*/mathjaxMgr.init();/*]]>*/</script></body></html>
